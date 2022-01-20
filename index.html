@@ -14,9 +14,106 @@
     <link href="/css/site.css" rel="stylesheet">
 </head>
 
-<body>
-       <div class="container">
-
+<body class="m-1">
+       <div class="container rounded p-2 border border-1">
+           <div class="d-flex justify-content-end mt-3 d-print-none">
+               <button type="button" class="btn btn-dark" onclick="window.print()">Print this page</button>
+           </div>
+           <div class="row align-items-center justify-content-start d-print-block">
+               <div class="col-sm-7 d-flex">
+                   <img src="/img/IdeaFoundryLogo.png" class="img-fluid" title="Idea Foundry Logo" alt="Idea Foundry Logo">
+               </div>
+               <div class="col-sm-5 d-flex justify-content-sm-end">
+                   <strong>Customer:</strong>&nbsp;4908
+               </div>
+           </div>
+           <hr>
+           <div class="row row-cols-1 row-cols-sm-2">
+               <div class="col d-flex justify-content-start">
+                   <strong>Date:</strong>&nbsp;5/12/2021
+               </div>
+               <div class="col d-flex justify-content-sm-end">
+                   <strong>Invoice No:</strong>&nbsp;19005
+               </div>
+           </div>
+           <hr>
+           <div class="row row-cols-sm-2">
+               <div class="col-6 d-flex justify-content-start">
+                   <address class="address">
+                       <strong class="addressT">Invoice To:</strong>&nbsp;<br>
+                       Mark Davis<br>
+                       3333 Al Davis Way<br>
+                       Lasr Vegas, NV 89118<br>
+                   </address>
+               </div>
+               <div class="col-6 d-flex justify-content-end">
+                   <address class="address">
+                       <strong class="addressT">Pay To:</strong>&nbsp;<br>
+                       Idea Foundry, Inc.<br>
+                       2795 N. Enterpise St<br>
+                       Kenersville, NC 27284
+                   </address>
+               </div>
+           </div>
+           <div class="row table-responsive m-1">
+               <table class="table table-striped table-bordered">
+                   <thead class="table-dark">
+                       <tr>
+                           <th>Service</th>
+                           <th>Description</th>
+                           <th>Rate</th>
+                           <th>Qty</th>
+                           <th class="text-end">Amout</th>
+                       </tr>
+                   </thead>
+                   <tbody>
+                       <tr>
+                           <td>Design</td>
+                           <td>Website Design</td>
+                           <td>$60.00</td>
+                           <td>10</td>
+                           <td class="text-end">$600.00</td>
+                       </tr>
+                        <tr>
+                            <td>Development</td>
+                            <td>Website Development</td>
+                            <td>$150.00</td>
+                            <td>10</td>
+                            <td class="text-end">$1500.00</td>
+                        </tr>
+                        <tr>
+                            <td>Deployment</td>
+                            <td>Deployment and Hosting</td>
+                            <td>$450.00</td>
+                            <td>1</td>
+                            <td class="text-end">$450.00</td>
+                        </tr>
+                   </tbody>
+                   <tfoot>
+                       <tr>
+                           <td colspan="4">Sub Total:</td>
+                           <td class="text-end"> $2,550.00</td>
+                       </tr>
+                        <tr>
+                            <td colspan="4">Tax:</td>
+                            <td class="text-end">$0</td>
+                        </tr>
+                        <tr>
+                            <td colspan="4">Total:</td>
+                            <td class="text-end">$2,550.00</td>
+                        </tr>
+                   </tfoot>
+               </table>
+           </div>
+           <footer>
+               <div class="row">
+                   <div class="col-12">
+                       <p>
+                         <strong>NOTE:</strong>&nbsp;This is a computer genereated receipt and does not require a signature.
+                       </p>
+                   </div>
+               </div>
+           </footer>
        </div>
 
     <!-- Bootstrap JS -->
